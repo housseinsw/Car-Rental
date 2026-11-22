@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | DriveEasy Car Rental</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+  <header class="navbar">
+    <nav class="nav-container">
+      <a href="index.html" class="logo">Drive<span>Easy</span></a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cars.html">Browse Cars</a></li>
+        <li><a href="my-reservations.html">My Reservations</a></li>
+        <li><a href="about.html">About &amp; Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Rent the right car for your trip</h1>
+      <p>Compare cars, check daily prices, and send a reservation request in minutes.</p>
+      <a href="cars.html" class="btn">Browse Cars</a>
+    </section>
+
+    <section class="featured">
+      <h2>Featured Cars</h2>
+      <!-- Filled by js/home.js from the shared car list -->
+      <div id="featured-cars" class="grid"></div>
+    </section>
+
+    <!-- TODO: "How it works" steps, why choose us, etc. -->
+  </main>
+
+  <footer class="footer">
+    <ul class="footer-links">
+      <li><a href="cars.html">Browse Cars</a></li>
+      <li><a href="about.html">About &amp; Contact</a></li>
+      <li><a href="login.html">Login / Sign-up</a></li>
+    </ul>
+    <p>&copy; <span id="year"></span> DriveEasy Car Rental. COSC 333 student prototype.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

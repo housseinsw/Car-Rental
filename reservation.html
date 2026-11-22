@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation | DriveEasy Car Rental</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reservation.css">
+</head>
+<body>
+  <header class="navbar">
+    <nav class="nav-container">
+      <a href="index.html" class="logo">Drive<span>Easy</span></a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cars.html">Browse Cars</a></li>
+        <li><a href="my-reservations.html">My Reservations</a></li>
+        <li><a href="about.html">About &amp; Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Make a Reservation</h1>
+
+    <form id="reservation-form" novalidate>
+      <div class="form-group">
+        <label for="car">Car</label>
+        <select id="car" name="car"></select>
+      </div>
+      <div class="form-group">
+        <label for="pickup-date">Pick-up date</label>
+        <input type="date" id="pickup-date" name="pickupDate" required>
+      </div>
+      <div class="form-group">
+        <label for="return-date">Return date</label>
+        <input type="date" id="return-date" name="returnDate" required>
+      </div>
+      <div class="form-group">
+        <label for="full-name">Full name</label>
+        <input type="text" id="full-name" name="fullName" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+
+      <p class="estimate">Estimated total: <span id="total" class="price">$0</span></p>
+      <button type="submit" class="btn">Send Request</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <ul class="footer-links">
+      <li><a href="cars.html">Browse Cars</a></li>
+      <li><a href="about.html">About &amp; Contact</a></li>
+      <li><a href="login.html">Login / Sign-up</a></li>
+    </ul>
+    <p>&copy; <span id="year"></span> DriveEasy Car Rental. COSC 333 student prototype.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/reservation.js"></script>
+</body>
+</html>

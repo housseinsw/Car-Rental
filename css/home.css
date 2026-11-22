@@ -1,0 +1,25 @@
+/* home.css - styles only for index.html */
+
+.hero {
+  text-align: center;
+  padding: 48px 16px;
+  margin-bottom: 32px;
+  background-color: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+}
+
+.hero p {
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+}

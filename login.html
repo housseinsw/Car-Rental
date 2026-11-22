@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Sign-up | DriveEasy Car Rental</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <header class="navbar">
+    <nav class="nav-container">
+      <a href="index.html" class="logo">Drive<span>Easy</span></a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cars.html">Browse Cars</a></li>
+        <li><a href="my-reservations.html">My Reservations</a></li>
+        <li><a href="about.html">About &amp; Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="auth-container">
+      <section class="card card-body">
+        <h2>Login</h2>
+        <form id="login-form" novalidate>
+          <div class="form-group">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" required>
+          </div>
+          <div class="form-group">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" required>
+          </div>
+          <button type="submit" class="btn">Login</button>
+        </form>
+      </section>
+
+      <section class="card card-body">
+        <h2>Sign up</h2>
+        <form id="signup-form" novalidate>
+          <div class="form-group">
+            <label for="signup-name">Full name</label>
+            <input type="text" id="signup-name" required>
+          </div>
+          <div class="form-group">
+            <label for="signup-email">Email</label>
+            <input type="email" id="signup-email" required>
+          </div>
+          <div class="form-group">
+            <label for="signup-password">Password</label>
+            <input type="password" id="signup-password" required>
+          </div>
+          <div class="form-group">
+            <label for="signup-confirm">Confirm password</label>
+            <input type="password" id="signup-confirm" required>
+          </div>
+          <button type="submit" class="btn">Create Account</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <ul class="footer-links">
+      <li><a href="cars.html">Browse Cars</a></li>
+      <li><a href="about.html">About &amp; Contact</a></li>
+      <li><a href="login.html">Login / Sign-up</a></li>
+    </ul>
+    <p>&copy; <span id="year"></span> DriveEasy Car Rental. COSC 333 student prototype.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About &amp; Contact | DriveEasy Car Rental</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+  <header class="navbar">
+    <nav class="nav-container">
+      <a href="index.html" class="logo">Drive<span>Easy</span></a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cars.html">Browse Cars</a></li>
+        <li><a href="my-reservations.html">My Reservations</a></li>
+        <li><a href="about.html">About &amp; Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about">
+      <h1>About Us</h1>
+      <p>DriveEasy is a car rental service that helps customers find the right car for a trip or a short period.</p>
+      <!-- TODO: more about the service, location, opening hours -->
+    </section>
+
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="contact-name">Name</label>
+          <input type="text" id="contact-name" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-email">Email</label>
+          <input type="email" id="contact-email" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <ul class="footer-links">
+      <li><a href="cars.html">Browse Cars</a></li>
+      <li><a href="about.html">About &amp; Contact</a></li>
+      <li><a href="login.html">Login / Sign-up</a></li>
+    </ul>
+    <p>&copy; <span id="year"></span> DriveEasy Car Rental. COSC 333 student prototype.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/about.js"></script>
+</body>
+</html>

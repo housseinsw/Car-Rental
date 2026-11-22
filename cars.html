@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Cars | DriveEasy Car Rental</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cars.css">
+</head>
+<body>
+  <header class="navbar">
+    <nav class="nav-container">
+      <a href="index.html" class="logo">Drive<span>Easy</span></a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cars.html">Browse Cars</a></li>
+        <li><a href="my-reservations.html">My Reservations</a></li>
+        <li><a href="about.html">About &amp; Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Browse Cars</h1>
+
+    <section class="filters">
+      <input type="text" id="search" placeholder="Search by name...">
+      <select id="type-filter">
+        <option value="">All types</option>
+        <option value="Sedan">Sedan</option>
+        <option value="SUV">SUV</option>
+        <option value="Hatchback">Hatchback</option>
+        <option value="Luxury">Luxury</option>
+        <option value="Van">Van</option>
+      </select>
+      <select id="sort">
+        <option value="">Sort by price</option>
+        <option value="low">Price: low to high</option>
+        <option value="high">Price: high to low</option>
+      </select>
+    </section>
+
+    <!-- Filled by js/cars.js -->
+    <div id="car-list" class="grid"></div>
+  </main>
+
+  <footer class="footer">
+    <ul class="footer-links">
+      <li><a href="cars.html">Browse Cars</a></li>
+      <li><a href="about.html">About &amp; Contact</a></li>
+      <li><a href="login.html">Login / Sign-up</a></li>
+    </ul>
+    <p>&copy; <span id="year"></span> DriveEasy Car Rental. COSC 333 student prototype.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cars.js"></script>
+</body>
+</html>
