@@ -1,0 +1,14 @@
+/* login.css - styles only for login.html */
+
+.auth-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .auth-container {
+    grid-template-columns: 1fr;
+  }
+}
+/* TODO: add styles for this page */
