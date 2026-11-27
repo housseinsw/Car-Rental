@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Cars | DriveEasy Car Rental</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cars.css">
+</head>
+<body>
+  <header class="navbar">
+    <nav class="nav-container">
+      <a href="index.html" class="logo">Drive<span>Easy</span></a>
+      <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cars.html">Browse Cars</a></li>
+        <li><a href="my-reservations.html">My Reservations</a></li>
+        <li><a href="about.html">About &amp; Contact</a></li>
+        <li><a href="dashboard.html" id="nav-dashboard">Dashboard</a></li>
+        <li><a href="login.html" id="nav-login">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Browse Cars</h1>
+    <p class="subtitle">Search, filter and sort our cars to find the right one for you.</p>
+
+    <section class="filters card">
+      <div class="filter">
+        <label for="search">Search</label>
+        <input type="text" id="search" placeholder="e.g. Toyota">
+      </div>
+      <div class="filter">
+        <label for="type-filter">Type</label>
+        <select id="type-filter">
+          <option value="">All types</option>
+          <option value="Sedan">Sedan</option>
+          <option value="SUV">SUV</option>
+          <option value="Hatchback">Hatchback</option>
+          <option value="Luxury">Luxury</option>
+          <option value="Van">Van</option>
+        </select>
+      </div>
+      <div class="filter">
+        <label for="transmission-filter">Transmission</label>
+        <select id="transmission-filter">
+          <option value="">Any</option>
+          <option value="Automatic">Automatic</option>
+          <option value="Manual">Manual</option>
+        </select>
+      </div>
+      <div class="filter">
+        <label for="sort">Sort by price</label>
+        <select id="sort">
+          <option value="">Default</option>
+          <option value="low">Low to high</option>
+          <option value="high">High to low</option>
+        </select>
+      </div>
+      <div class="filter filter-check">
+        <input type="checkbox" id="available-only">
+        <label for="available-only">Available only</label>
+      </div>
+    </section>
+
+    <p id="result-count" class="result-count"></p>
+    <div id="car-list" class="grid"></div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div>
+        <p class="footer-logo">Drive<span>Easy</span></p>
+        <p>Find the right car for your trip and book it in minutes.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul class="footer-links">
+          <li><a href="cars.html">Browse Cars</a></li>
+          <li><a href="my-reservations.html">My Reservations</a></li>
+          <li><a href="about.html">About &amp; Contact</a></li>
+          <li><a href="login.html">Login / Sign-up</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Beirut, Lebanon</p>
+        <p><a href="tel:+96176992179">+961 76 992 179</a></p>
+        <p><a href="mailto:housseinsw08@gmail.com">housseinsw08@gmail.com</a></p>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; <span id="year"></span> DriveEasy Car Rental.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cars.js"></script>
+</body>
+</html>
