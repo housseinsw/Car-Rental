@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | DriveEasy Car Rental</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+  <header class="navbar">
+    <nav class="nav-container">
+      <a href="index.html" class="logo">Drive<span>Easy</span></a>
+      <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cars.html">Browse Cars</a></li>
+        <li><a href="my-reservations.html">My Reservations</a></li>
+        <li><a href="about.html">About &amp; Contact</a></li>
+        <li><a href="dashboard.html" id="nav-dashboard">Dashboard</a></li>
+        <li><a href="login.html" id="nav-login">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Rent the right car for your next trip</h1>
+        <p>Compare cars and daily prices, check availability, and send a reservation request in minutes. No phone calls needed.</p>
+        <form id="quick-search" class="quick-search">
+          <select id="quick-type" aria-label="Car type">
+            <option value="">Any car type</option>
+            <option value="Sedan">Sedan</option>
+            <option value="SUV">SUV</option>
+            <option value="Hatchback">Hatchback</option>
+            <option value="Luxury">Luxury</option>
+            <option value="Van">Van</option>
+          </select>
+          <button type="submit" class="btn btn-accent">Find a Car</button>
+        </form>
+      </div>
+      <img src="images/hero-keys.jpg" alt="A hand holding car keys in front of a car" class="hero-image">
+    </section>
+
+    <section class="stats">
+      <div class="stat"><span id="stat-cars">0</span><p>Cars in our fleet</p></div>
+      <div class="stat"><span id="stat-available">0</span><p>Available now</p></div>
+      <div class="stat"><span id="stat-price">$0</span><p>Starting price per day</p></div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Featured Cars</h2>
+        <a href="cars.html">See all cars &rarr;</a>
+      </div>
+      <div id="featured-cars" class="grid"></div>
+    </section>
+
+    <section class="section">
+      <h2 class="center">How It Works</h2>
+      <div class="steps">
+        <div class="step">
+          <span class="step-number">1</span>
+          <h3>Choose a car</h3>
+          <p>Browse our cars, filter by type and compare daily prices.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">2</span>
+          <h3>Pick your dates</h3>
+          <p>Select pick-up and return dates and see the estimated total.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">3</span>
+          <h3>Send your request</h3>
+          <p>We review your request and you follow its status in My Reservations.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Ready to hit the road?</h2>
+      <p>Create a free account to send reservation requests and keep track of them.</p>
+      <a href="login.html" class="btn btn-accent">Create an Account</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div>
+        <p class="footer-logo">Drive<span>Easy</span></p>
+        <p>Find the right car for your trip and book it in minutes.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul class="footer-links">
+          <li><a href="cars.html">Browse Cars</a></li>
+          <li><a href="my-reservations.html">My Reservations</a></li>
+          <li><a href="about.html">About &amp; Contact</a></li>
+          <li><a href="login.html">Login / Sign-up</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Beirut, Lebanon</p>
+        <p><a href="tel:+96176992179">+961 76 992 179</a></p>
+        <p><a href="mailto:housseinsw08@gmail.com">housseinsw08@gmail.com</a></p>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; <span id="year"></span> DriveEasy Car Rental. Student prototype for COSC 333.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
